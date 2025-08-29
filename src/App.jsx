@@ -5,7 +5,7 @@ import './App.css'
 import Todoitem from './components/Todoitems'
 
 function App() {
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState([{id : 1234, todo : "Start with your first todo" , completed : false}])
 
   const addTodo = (todo) => {
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev])
